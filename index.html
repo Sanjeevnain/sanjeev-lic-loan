@@ -61,22 +61,17 @@
             <div style="display: flex; flex-direction: column; gap: 20px;">
                 <div style="background: white; padding: 20px; border-radius: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
                     <h4 style="font-size: 18px; font-weight: bold; margin-bottom: 15px; padding-bottom: 8px; color: #1e40af; border-bottom: 2px solid #dbeafe;">For Salaried Individuals</h4>
-                    <ul style="list-style: none; padding: 0; margin: 0;">
-                        <style>.d-li { font-size: 14px; margin-bottom: 8px; color: #4b5563; }</style>
-                        <li class="d-li">✓ <strong>PAN Card</strong> & <strong>Aadhar Card</strong></li>
-                        <li class="d-li">✓ Last 3 Months <strong>Salary Slip</strong></li>
-                        <li class="d-li">✓ Last 6 Months <strong>Bank Statement</strong></li>
-                        <li class="d-li">✓ Last 2 Years <strong>Form 16</strong> / ITR</li>
-                    </ul>
+                    <p style="font-size: 14px; margin: 5px 0; color: #4b5563;">✓ PAN Card & Aadhar Card</p>
+                    <p style="font-size: 14px; margin: 5px 0; color: #4b5563;">✓ Last 3 Months Salary Slip</p>
+                    <p style="font-size: 14px; margin: 5px 0; color: #4b5563;">✓ Last 6 Months Bank Statement</p>
+                    <p style="font-size: 14px; margin: 5px 0; color: #4b5563;">✓ Last 2 Years Form 16 / ITR</p>
                 </div>
                 <div style="background: white; padding: 20px; border-radius: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
                     <h4 style="font-size: 18px; font-weight: bold; margin-bottom: 15px; padding-bottom: 8px; color: #166534; border-bottom: 2px solid #dcfce7;">For Business / Self-Employed</h4>
-                    <ul style="list-style: none; padding: 0; margin: 0;">
-                        <li class="d-li">✓ <strong>PAN Card</strong> & <strong>Aadhar Card</strong></li>
-                        <li class="d-li">✓ Last 2 to 3 Years <strong>ITR</strong> with Computation</li>
-                        <li class="d-li">✓ Last 1 Year <strong>Current Bank Account Statement</strong></li>
-                        <li class="d-li">✓ Business Proof (<strong>GST / MSME Certificate</strong>)</li>
-                    </ul>
+                    <p style="font-size: 14px; margin: 5px 0; color: #4b5563;">✓ PAN Card & Aadhar Card</p>
+                    <p style="font-size: 14px; margin: 5px 0; color: #4b5563;">✓ Last 2 to 3 Years ITR with Computation</p>
+                    <p style="font-size: 14px; margin: 5px 0; color: #4b5563;">✓ Last 1 Year Current Bank Account Statement</p>
+                    <p style="font-size: 14px; margin: 5px 0; color: #4b5563;">✓ Business Proof (GST / MSME Certificate)</p>
                 </div>
             </div>
         </div>
@@ -107,7 +102,7 @@
         </div>
     </section>
 
-    <!-- Form Container (सातों इंग्लिश कॉलम 100% पक्के इनलाइन लुक में) -->
+    <!-- Form Container (7 English Columns + Working JS) -->
     <section id="query-form" style="width: 100%; max-width: 1000px; margin: 30px auto; padding: 0 20px;">
         <div style="background: white; padding: 30px 20px; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); max-width: 500px; margin: 0 auto; border: 1px solid #e5e7eb;">
             <h3 style="text-align: center; color: #1e3a8a; font-size: 24px; font-weight: bold; margin-bottom: 5px; margin-top: 0;">Loan Application / Inquiry Form</h3>
@@ -116,3 +111,7 @@
             <form id="loanForm" onsubmit="sendToWhatsApp(event)">
                 <div style="margin-bottom: 15px;">
                     <label style="display: block; font-size: 14px; font-weight: 600; margin-bottom: 5px; color: #374151;">Customer Full Name *</label>
+                    <input type="text" id="custName" required placeholder="Enter your full name" style="width: 100%; padding: 12px; border: 1px solid #d1d5db; border-radius: 8px; font-size: 14px;">
+                </div>
+                
+                <div style="margin-bottom: 15px;">
