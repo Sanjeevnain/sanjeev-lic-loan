@@ -31,19 +31,71 @@
     <section style="background: linear-gradient(135deg, #1d4ed8, #4338ca); color: white; padding: 40px 20px; text-align: center;">
         <div style="width: 100%; max-width: 1000px; margin: 0 auto; padding: 0 20px;">
             <h2 style="font-size: 30px; font-weight: 800; margin-bottom: 15px;">Looking for the Lowest Interest Rate Loans?</h2>
-            <p style="font-size: 16px; color: #e0e7ff; margin-bottom: 25px;">Select your loan type inside the form below and apply instantly.</p>
+            <p style="font-size: 16px; color: #e0e7ff; margin-bottom: 25px;">Fill out the simple application form below and apply instantly via WhatsApp.</p>
         </div>
     </section>
 
-    <!-- Smart Form Container -->
+    <!-- Loan Services Features -->
+    <section style="width: 100%; max-width: 1000px; margin: 30px auto; padding: 0 20px;">
+        <div style="display: flex; flex-direction: column; gap: 15px;">
+            <div style="background: white; padding: 15px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center; border-top: 5px solid #2563eb;">
+                <h3 style="font-size: 18px; font-weight: bold; margin-bottom: 5px; color: #1e3a8a;">🏠 Home Loan / 🛠️ Maintenance Loan</h3>
+                <p style="font-size: 13px; color: #666; margin: 0;">Get attractive rates for new home purchase, construction, or renovation work.</p>
+            </div>
+            <div style="background: white; padding: 15px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center; border-top: 5px solid #16a34a;">
+                <h3 style="font-size: 18px; font-weight: bold; margin-bottom: 5px; color: #1e3a8a;">🏢 Business Loan</h3>
+                <p style="font-size: 13px; color: #666; margin: 0;">Expand your commercial shop, business, or factory with easy funding.</p>
+            </div>
+            <div style="background: white; padding: 15px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center; border-top: 5px solid #7c3aed;">
+                <h3 style="font-size: 18px; font-weight: bold; margin-bottom: 5px; color: #1e3a8a;">🔄 Loan Transfer</h3>
+                <p style="font-size: 13px; color: #666; margin: 0;">Transfer high-interest loans from other banks to LIC DSA for massive savings.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Required Documents Section -->
+    <section style="width: 100%; max-width: 1000px; margin: 30px auto; padding: 0 20px;">
+        <div style="background-color: #eef2ff; padding: 30px 20px; border-radius: 16px;">
+            <div style="text-align: center; font-size: 22px; font-weight: bold; color: #1e3a8a; margin-bottom: 20px;">Required Documents List</div>
+            <div style="background: white; padding: 15px; border-radius: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.02); margin-bottom: 15px;">
+                <h4 style="font-size: 16px; font-weight: bold; margin-bottom: 8px; color: #1e40af;">For Salaried Individuals</h4>
+                <p style="font-size: 13px; color: #4b5563; margin: 0;">✓ PAN Card, Aadhar Card, Last 3 Months Salary Slip & 6 Months Bank Statement.</p>
+            </div>
+            <div style="background: white; padding: 15px; border-radius: 12px; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+                <h4 style="font-size: 16px; font-weight: bold; margin-bottom: 8px; color: #166534;">For Business / Self-Employed</h4>
+                <p style="font-size: 13px; color: #4b5563; margin: 0;">✓ PAN Card, Aadhar Card, Last 2 to 3 Years ITR & 1 Year Bank Statement.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Presence Map Section -->
+    <section style="width: 100%; max-width: 1000px; margin: 30px auto; padding: 0 20px; text-align: center;">
+        <h3 style="color: #1e3a8a; font-size: 22px; font-weight: bold; margin-bottom: 10px;">Our Presence</h3>
+        <div style="width: 100%; height: 250px; background-color: #e5e7eb; border-radius: 16px; overflow: hidden; border: 1px solid #d1d5db;">
+            <iframe style="width: 100%; height: 100%; border: 0;" src="https://google.com" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Open Form Container (100% वर्किंग बिना रुकावट वाला ड्रॉपडाउन) -->
     <section id="query-form" style="width: 100%; max-width: 1000px; margin: 30px auto; padding: 0 20px;">
         <div style="background: white; padding: 30px 20px; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); max-width: 520px; margin: 0 auto; border: 1px solid #e5e7eb;">
             
             <h3 style="text-align: center; color: #1e3a8a; font-size: 24px; font-weight: bold; margin-bottom: 5px; margin-top: 0;">Loan Application Form</h3>
-            <p style="text-align: center; color: #6b7280; font-size: 13px; margin-bottom: 25px; margin-top: 0;">Please fill in the details below, we will contact you shortly.</p>
+            <p style="text-align: center; color: #6b7280; font-size: 13px; margin-bottom: 25px; margin-top: 0;">Please select your loan type from the menu below and fill in the details.</p>
             
             <form id="loanForm" onsubmit="sendToWhatsApp(event)">
-                <!-- Common Fields -->
+                <!-- 1. Selection Dropdown (यह गिटहब पर कभी फेल नहीं होगा) -->
+                <div style="margin-bottom: 20px;">
+                    <label style="display: block; font-size: 14px; font-weight: bold; margin-bottom: 6px; color: #1e40af;">Choose Loan Type *</label>
+                    <select id="loanPurpose" required style="width: 100%; padding: 12px; border: 2px solid #1e40af; border-radius: 8px; font-size: 14px; background-color: white; font-weight: bold; color: #333;">
+                        <option value="Home Loan">🏠 Home Loan</option>
+                        <option value="Business Loan">🏢 Business Loan</option>
+                        <option value="Maintenance Loan">🛠️ Maintenance Loan</option>
+                        <option value="Loan Transfer">🔄 Loan Transfer</option>
+                    </select>
+                </div>
+
+                <!-- Common Details -->
                 <div style="margin-bottom: 15px;">
                     <label style="display: block; font-size: 14px; font-weight: 600; margin-bottom: 5px; color: #374151;">Customer Full Name *</label>
                     <input type="text" id="custName" required placeholder="Enter your full name" style="width: 100%; padding: 12px; border: 1px solid #d1d5db; border-radius: 8px; font-size: 14px;">
@@ -69,47 +121,5 @@
                     <input type="text" id="loanAmount" required placeholder="e.g. 15 Lakh" style="width: 100%; padding: 12px; border: 1px solid #d1d5db; border-radius: 8px; font-size: 14px;">
                 </div>
                 
-                <!-- 🔘 100% पक्का टिक करने वाला विकल्प (Radio Selection) -->
-                <div style="margin-bottom: 20px; background-color: #f8fafc; padding: 15px; border-radius: 10px; border: 1px solid #e2e8f0; text-align: left;">
-                    <label style="display: block; font-size: 14px; font-weight: bold; margin-bottom: 10px; color: #1e40af;">Select Purpose of Loan *</label>
-                    
-                    <div style="margin-bottom: 8px;">
-                        <input type="radio" id="loanHome" name="loanPurpose" value="Home Loan" checked onchange="toggleFormSections()" style="margin-right: 8px; transform: scale(1.2); cursor: pointer;">
-                        <label for="loanHome" style="font-size: 14px; font-weight: 600; cursor: pointer;">🏠 Home Loan</label>
-                    </div>
-                    <div style="margin-bottom: 8px;">
-                        <input type="radio" id="loanBusiness" name="loanPurpose" value="Business Loan" onchange="toggleFormSections()" style="margin-right: 8px; transform: scale(1.2); cursor: pointer;">
-                        <label for="loanBusiness" style="font-size: 14px; font-weight: 600; cursor: pointer;">🏢 Business Loan</label>
-                    </div>
-                    <div style="margin-bottom: 8px;">
-                        <input type="radio" id="loanMain" name="loanPurpose" value="Maintenance Loan" onchange="toggleFormSections()" style="margin-right: 8px; transform: scale(1.2); cursor: pointer;">
-                        <label for="loanMain" style="font-size: 14px; font-weight: 600; cursor: pointer;">🛠️ Maintenance Loan</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="loanTransfer" name="loanPurpose" value="Loan Transfer" onchange="toggleFormSections()" style="margin-right: 8px; transform: scale(1.2); cursor: pointer;">
-                        <label for="loanTransfer" style="font-size: 14px; font-weight: 600; cursor: pointer;">🔄 Loan Transfer</label>
-                    </div>
-                </div>
-
-                <!-- 🏠 HOME LOAN SECTION -->
-                <div id="homeSection" style="display: block; background-color: #f0fdf4; padding: 15px; border-radius: 8px; margin-bottom: 15px; border: 1px solid #bbf7d0; text-align: left;">
-                    <h4 style="font-size: 14px; color: #166534; font-weight: bold; margin-bottom: 10px; margin-top:0;">Home Loan Extra Details</h4>
-                    <div style="margin-bottom: 10px;">
-                        <label style="display: block; font-size: 13px; font-weight: 600; margin-bottom: 3px;">Property Location *</label>
-                        <input type="text" id="propLocation" placeholder="Where is the property?" style="width: 100%; padding: 10px; border: 1px solid #d1d5db; border-radius: 6px; font-size: 13px; background-color: white;">
-                    </div>
-                    <div>
-                        <label style="display: block; font-size: 13px; font-weight: 600; margin-bottom: 3px;">Property Value *</label>
-                        <input type="text" id="propValue" placeholder="e.g. 25 Lakh" style="width: 100%; padding: 10px; border: 1px solid #d1d5db; border-radius: 6px; font-size: 13px; background-color: white;">
-                    </div>
-                </div>
-
-                <!-- 🏢 BUSINESS LOAN SECTION -->
-                <div id="businessSection" style="display: none; background-color: #fff7ed; padding: 15px; border-radius: 8px; margin-bottom: 15px; border: 1px solid #ffedd5; text-align: left;">
-                    <h4 style="font-size: 14px; color: #9a3412; font-weight: bold; margin-bottom: 10px; margin-top:0;">Business Loan Extra Details</h4>
-                    <div style="margin-bottom: 10px;">
-                        <label style="display: block; font-size: 13px; font-weight: 600; margin-bottom: 3px;">Business Type *</label>
-                        <input type="text" id="businessType" placeholder="e.g. Retail Shop, Manufacturing" style="width: 100%; padding: 10px; border: 1px solid #d1d5db; border-radius: 6px; font-size: 13px; background-color: white;">
-                    </div>
-                    <div>
-                        <label style="display: block; font-size: 13px; font-weight: 600; margin-bottom: 3px;">Annual Turnover *</label>
+                <!-- Additional Notes Box (वैकल्पिक जानकारी के लिए) -->
+                <div style="margin-bottom: 15px;">
