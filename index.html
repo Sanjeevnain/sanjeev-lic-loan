@@ -76,18 +76,18 @@
         </div>
     </section>
 
-    <!-- Open Form Container (बटन को बिल्कुल बीच में फिट किया हुआ) -->
+    <!-- Form Container (सबमिट बटन टॉप पर सेट किया हुआ) -->
     <section id="query-form" style="width: 100%; max-width: 1000px; margin: 30px auto; padding: 0 20px;">
         <div style="background: white; padding: 25px 20px; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); max-width: 520px; margin: 0 auto; border: 1px solid #e5e7eb;">
             
             <h3 style="text-align: center; color: #1e3a8a; font-size: 24px; font-weight: bold; margin-bottom: 5px; margin-top: 0;">Loan Application Form</h3>
-            <p style="text-align: center; color: #6b7280; font-size: 13px; margin-bottom: 20px; margin-top: 0;">Please select your loan type from the menu below and fill in the details.</p>
+            <p style="text-align: center; color: #6b7280; font-size: 13px; margin-bottom: 20px; margin-top: 0;">Fill details and click the green button to send on WhatsApp.</p>
             
             <form id="loanForm" onsubmit="sendToWhatsApp(event)">
                 <!-- 1. Selection Dropdown -->
-                <div style="margin-bottom: 12px;">
+                <div style="margin-bottom: 15px;">
                     <label style="display: block; font-size: 13px; font-weight: bold; margin-bottom: 4px; color: #1e40af;">Choose Loan Type *</label>
-                    <select id="loanPurpose" required style="width: 100%; padding: 10px; border: 2px solid #1e40af; border-radius: 6px; font-size: 14px; background-color: white; font-weight: bold; color: #333;">
+                    <select id="loanPurpose" required style="width: 100%; padding: 10px; border: 2px solid #1e40af; border-radius: 8px; font-size: 14px; background-color: white; font-weight: bold; color: #333;">
                         <option value="Home Loan">🏠 Home Loan</option>
                         <option value="Business Loan">🏢 Business Loan</option>
                         <option value="Maintenance Loan">🛠️ Maintenance Loan</option>
@@ -95,7 +95,14 @@
                     </select>
                 </div>
 
-                <!-- Common Details -->
+                <!-- 🟢 बड़ा हरा सबमिट बटन (अब फॉर्म में सबसे ऊपर है, ताकि कटे नहीं) -->
+                <div style="margin-bottom: 20px;">
+                    <button type="submit" style="width: 100%; background-color: #16a34a; color: white; font-weight: bold; padding: 14px; border: none; border-radius: 8px; font-size: 16px; cursor: pointer; text-align: center; display: block; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                        🚀 Send Application on WhatsApp
+                    </button>
+                </div>
+
+                <!-- Input Fields -->
                 <div style="margin-bottom: 12px;">
                     <label style="display: block; font-size: 13px; font-weight: 600; margin-bottom: 4px; color: #374151;">Customer Full Name *</label>
                     <input type="text" id="custName" required placeholder="Enter your full name" style="width: 100%; padding: 10px; border: 1px solid #d1d5db; border-radius: 6px; font-size: 14px;">
@@ -116,9 +123,4 @@
                     <input type="text" id="monthlyIncome" required placeholder="e.g. 45,000" style="width: 100%; padding: 10px; border: 1px solid #d1d5db; border-radius: 6px; font-size: 14px;">
                 </div>
 
-                <div style="margin-bottom: 20px;">
-                    <label style="display: block; font-size: 13px; font-weight: 600; margin-bottom: 4px; color: #374151;">Amount Required *</label>
-                    <input type="text" id="loanAmount" required placeholder="e.g. 15 Lakh" style="width: 100%; padding: 10px; border: 1px solid #d1d5db; border-radius: 6px; font-size: 14px;">
-                </div>
-                
-                <!-- बड़ा हरा सबमिट बटन (100% विज़िबल) -->
+                <div style="margin-bottom: 12px;">
