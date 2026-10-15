@@ -41,11 +41,11 @@
             
             <h3 style="text-align: center; color: #1e3a8a; font-size: 24px; font-weight: bold; margin-bottom: 15px; margin-top: 0;">Select Loan Type to Apply</h3>
             
-            <!-- 3 Grand Tabs/Buttons for selection -->
+            <!-- 3 Grand Tabs/Links for selection - No JS dependent for clicking -->
             <div style="display: flex; gap: 10px; margin-bottom: 25px; justify-content: space-between;">
-                <button onclick="switchLoanForm('Home')" id="btnHome" style="flex: 1; padding: 12px 5px; font-weight: bold; border-radius: 8px; border: 2px solid #2563eb; background-color: #2563eb; color: white; cursor: pointer; font-size: 13px;">🏠 Home Loan</button>
-                <button onclick="switchLoanForm('Business')" id="btnBusiness" style="flex: 1; padding: 12px 5px; font-weight: bold; border-radius: 8px; border: 2px solid #16a34a; background-color: white; color: #16a34a; cursor: pointer; font-size: 13px;">🏢 Business</button>
-                <button onclick="switchLoanForm('Transfer')" id="btnTransfer" style="flex: 1; padding: 12px 5px; font-weight: bold; border-radius: 8px; border: 2px solid #7c3aed; background-color: white; color: #7c3aed; cursor: pointer; font-size: 13px;">🔄 Transfer</button>
+                <a href="javascript:void(0);" id="btnHome" style="flex: 1; padding: 12px 5px; font-weight: bold; border-radius: 8px; border: 2px solid #2563eb; background-color: #2563eb; color: white; cursor: pointer; font-size: 13px; text-decoration: none; text-align: center; display: block;">🏠 Home Loan</a>
+                <a href="javascript:void(0);" id="btnBusiness" style="flex: 1; padding: 12px 5px; font-weight: bold; border-radius: 8px; border: 2px solid #16a34a; background-color: white; color: #16a34a; cursor: pointer; font-size: 13px; text-decoration: none; text-align: center; display: block;">🏢 Business</a>
+                <a href="javascript:void(0);" id="btnTransfer" style="flex: 1; padding: 12px 5px; font-weight: bold; border-radius: 8px; border: 2px solid #7c3aed; background-color: white; color: #7c3aed; cursor: pointer; font-size: 13px; text-decoration: none; text-align: center; display: block;">🔄 Transfer</a>
             </div>
 
             <form id="loanForm" onsubmit="sendToWhatsApp(event)">
@@ -120,6 +120,3 @@
                     </div>
                 </div>
                 
-                <button type="submit" style="width: 100%; background-color: #16a34a; color: white; font-weight: bold; padding: 14px; border: none; border-radius: 8px; font-size: 16px; cursor: pointer; margin-top: 15px;">
-                    Send Inquiry on WhatsApp
-                </button>
